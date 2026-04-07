@@ -1,15 +1,14 @@
 # 2D Laminar Pipe Flow CFD Solver (SIMPLE Algorithm)
 
-This repository contains a 2D Computational Fluid Dynamics (CFD) solver written in Python. It simulates the development of a laminar flow velocity profile inside a pipe using the **SIMPLE** (Semi-Implicit Method for Pressure Linked Equations) algorithm. 
+This repository contains a python 2D Computational Fluid Dynamics (CFD) solver. It simulates the development of a laminar flow velocity profile inside a pipe using the **SIMPLE** (Semi-Implicit Method for Pressure Linked Equations) algorithm. 
 
-The code is highly customizable, mathematically robust, and includes built-in visualizations to help you understand the physics of developing flow, pressure gradients, and the continuity equation.
+## Functions
 
-## Features
-
-* **Automatic Geometry Setup:** Calculates the exact hydrodynamic entrance length needed for the velocity profile to fully develop based on the Reynolds number.
-* **Physics Guardrails:** Built-in checks to ensure the flow remains laminar (Reynolds number must be $< 2300$ for this simulation to be valid).
-* **Live Residual Monitoring:** A real-time plot tracks velocity and pressure errors to visually display the precision of convergence.
-* **Rich Visualization:** Generates comprehensive subplots showing the velocity field with developing profiles, the pressure field, and a comparison against the exact analytical solution.
+* **Customisable geometry, fluid medium and simulation precision:** In the first section of the code you can alter flow domain properties to your liking.
+* **Automatic Geometry Setup:** Calculates the hydrodynamic entrance length needed for the velocity profile to fully develop based on the Reynolds number.
+* **Laminar flow check:** Code checks to ensure the flow remains laminar (Reynolds number must be $< 2300$).
+* **Residual Monitor:** A real-time plot tracks velocity and pressure errors to visually display the convergence of solution.
+* **Visualization:** Generates comprehensive subplots showing the velocity field with developing profiles, the pressure field, and a comparison against the exact analytical solution.
 
 ---
 
@@ -23,7 +22,7 @@ To run this simulation, you will need Python installed along with the following 
 
 ---
 
-## 🛠️ How to Use (Inputs)
+## How to Use (Inputs)
 
 The physics setup is conveniently located at the very top of the script in the **INPUTS** section. You can easily edit these to your liking or needs:
 
@@ -34,7 +33,7 @@ The physics setup is conveniently located at the very top of the script in the *
 
 ---
 
-## 🧠 How It Works (Under the Hood)
+## How It Works (Under the Hood)
 
 This script solves the 2D Navier-Stokes equations by discretizing the pipe into a grid ($100 \times 40$ cells by default) and iteratively solving the fluid flow matrices. Here is the step-by-step logic:
 
@@ -57,7 +56,7 @@ CFD mathematics can be highly unstable. To prevent the simulation from breaking,
 
 ---
 
-## 📊 Visualizations
+## Visualizations
 
 Once the solver hits the target precision, it automatically prints the node where the flow becomes fully developed and generates a 3-part visualization figure:
 
