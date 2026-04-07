@@ -1,14 +1,10 @@
-Here is a README.md text based on your code, incorporating your comments and structure to explain how the solver works. 
-
-***
-
 # 2D Laminar Pipe Flow CFD Solver (SIMPLE Algorithm)
 
-This repository contains a lightweight, fully functional 2D Computational Fluid Dynamics (CFD) solver written in Python. It simulates the development of a laminar flow velocity profile inside a pipe using the **SIMPLE** (Semi-Implicit Method for Pressure Linked Equations) algorithm. 
+This repository contains a 2D Computational Fluid Dynamics (CFD) solver written in Python. It simulates the development of a laminar flow velocity profile inside a pipe using the **SIMPLE** (Semi-Implicit Method for Pressure Linked Equations) algorithm. 
 
 The code is highly customizable, mathematically robust, and includes built-in visualizations to help you understand the physics of developing flow, pressure gradients, and the continuity equation.
 
-## 🚀 Features
+## Features
 
 * **Automatic Geometry Setup:** Calculates the exact hydrodynamic entrance length needed for the velocity profile to fully develop based on the Reynolds number.
 * **Physics Guardrails:** Built-in checks to ensure the flow remains laminar (Reynolds number must be $< 2300$ for this simulation to be valid).
