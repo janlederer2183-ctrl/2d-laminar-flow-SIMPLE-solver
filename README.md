@@ -49,3 +49,7 @@ Once the solution converges, the code generates a figure with 3 subplots:
 * **Velocity Field:** A contour plot of the velocity magnitude, overlaid with solid velocity profile curves at 5 different stations to show the flow developing from a flat inlet profile to a parabola.
 * **Pressure Field:** A contour map showing the pressure drop along the length of the pipe (relative to the outlet).
 * **Fully Developed Comparison:** A direct comparison plot at the outlet, checking the Numerical Solver Result against the Analytical Exact Solution for fully developed laminar pipe flow.
+
+**Example of simulation result:**
+
+![img alt](Figure_example.png)
