@@ -4,7 +4,7 @@ This repository contains a python 2D Computational Fluid Dynamics solver. It sim
 
 ## Functions
 
-* **Customisable geometry, fluid medium and simulation precision:** In the first section of the code you can alter flow domain properties to your liking.
+* **Customisable geometry, fluid medium and simulation precision:** In the first section of the code you can alter flow domain and simulation properties to your liking.
 * **Laminar flow check:** Code checks to ensure the flow remains laminar (Reynolds number must be $< 2300$).
 * **Automatic Length Setup:** Calculates the hydrodynamic entrance length needed for the velocity profile to fully develop based on the Reynolds number.
 * **Residual Monitor:** A real-time plot tracks velocity and pressure errors to visually display the convergence of solution.
@@ -18,7 +18,7 @@ The physics setup is located at the very top of the script in the **INPUTS** sec
 * **Inlet velocity:** Set the initial `inlet_velocity`. 
 * **Fluid Properties:** Define the density (`rho`) and dynamic viscosity (`mu_dynamic`). Right now, the material is set to water.
 * **Iteration Parameters:** You can increase `max_iter` to ensure there is enough iterations for the solution to converge and adjust the `tolerance` for a precision of convergence.
-* **Grid (no need to change):** If you want your solution to be even more precise, you can change number of cells in the grid by increasing nx and ny at line 55 and 56. The grid is set to $100 \times 40$ cells by default.
+* **Grid (no need to change):** If you want your solution to be even more precise, you can change the number of cells in the grid by increasing $nx$ and $ny$ at line 55 and 56. The grid is set to $100 \times 40$ cells by default.
 
 * **Run the script**
 
@@ -36,7 +36,7 @@ If the flow is safely laminar, it calculates the Hydrodynamic Entrance Length ($
 ### 2. The SIMPLE Solver Loop
 The algorithm has three main solver functions that repeat until the residual error hits the needed tolerance:
 
-* **Solving Momentum (for direction $x$ and $y$):** For each cell, we set up $Ax = b$ matrices based on the convective and diffusive fluxes from surrounding cells. This gives us a guess for our velocity field based on old pressure field ($0 Pa$ at the beginning). 
+* **Solving Momentum (for direction $x$ and $y$):** For each cell, we set up $Ax = b$ matrices based on the convective and diffusive fluxes from surrounding cells. This gives us a guess for our velocity field based on old pressure field ($0$ $Pa$ at the beginning). 
 * **Pressure Correction:** The function balances the forces acting on the fluid with the mass flux across boundaries, with the new velocity field, to get a more accurate pressure field, fulfilling the continuity equation (mass conservation).
 * **Velocity Correction:** Finally, the script corrects the initially guessed velocity field based on the newly calculated pressure gradients. 
 
