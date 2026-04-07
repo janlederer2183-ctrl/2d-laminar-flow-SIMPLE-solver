@@ -1,6 +1,6 @@
 # Python 2D Laminar Pipe Flow CFD Solver
 
-This repository contains a python 2D Computational Fluid Dynamics solver. It simulates the development of a laminar flow velocity profile inside a pipe using the **SIMPLE** (Semi-Implicit Method for Pressure Linked Equations) algorithm. 
+This repository contains a python 2D Computational Fluid Dynamics solver. It simulates the development of a laminar, stable, incompressible flow velocity profile inside a pipe using the **SIMPLE** (Semi-Implicit Method for Pressure Linked Equations) algorithm. 
 
 ## Functions
 
