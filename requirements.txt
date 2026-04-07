@@ -1,1 +1,9 @@
-bhk
+
+
+
+To run this simulation, you will need Python installed along with the following libraries:
+
+numpy (Array operations and math)
+matplotlib (Visualizations and live plotting)
+scipy (Sparse matrices and linear algebra solvers)
+
