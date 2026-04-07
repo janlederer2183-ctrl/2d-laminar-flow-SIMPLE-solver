@@ -5,14 +5,14 @@ This repository contains a python 2D Computational Fluid Dynamics (CFD) solver. 
 ## Functions
 
 * **Customisable geometry, fluid medium and simulation precision:** In the first section of the code you can alter flow domain properties to your liking.
-* **Automatic Geometry Setup:** Calculates the hydrodynamic entrance length needed for the velocity profile to fully develop based on the Reynolds number.
 * **Laminar flow check:** Code checks to ensure the flow remains laminar (Reynolds number must be $< 2300$).
+* **Automatic Length Setup:** Calculates the hydrodynamic entrance length needed for the velocity profile to fully develop based on the Reynolds number.
 * **Residual Monitor:** A real-time plot tracks velocity and pressure errors to visually display the convergence of solution.
-* **Visualization:** Generates comprehensive subplots showing the velocity field with developing profiles, the pressure field, and a comparison against the exact analytical solution.
+* **Visualization:** Generation of three subplots showing the velocity field with developing profiles, the pressure field, and a comparison of code numerical solution against the exact analytical solution.
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 To run this simulation, you will need Python installed along with the following libraries:
 
