@@ -43,7 +43,7 @@ The algorithm has three main solver functions that repeat until the residual err
 ### 3. Relaxation
 To prevent the simulation from agressivly diverging, the code uses **relaxation coefficients** (`alpha_u`, `alpha_v`, `alpha_p`). These act as brakes on sharp gradients, slowing down the changes between iterations.
 
-## Visualizations
+## Visualization
 
 Once the solution converges, the code generates a figure with 3 subplots:
 * **Velocity Field:** A contour plot of the velocity magnitude, overlaid with solid velocity profile curves at 5 different stations to show the flow developing from a flat inlet profile to a parabola.
