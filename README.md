@@ -11,7 +11,7 @@ This repository contains a python 2D Computational Fluid Dynamics solver. It sim
 * **Visualization:** After convergence, the code generates three subplots showing the velocity field with developing profiles, the pressure field, and a comparison of code numerical solution against the exact analytical solution.
 
 ## How to Use
-Firstly, check **requirements.txt** to see needed used libraries for the script.
+Firstly, check **requirements.txt** to see needed used libraries adn python version for the script.
 The physics setup is located at the very top of the script in the **INPUTS** section. You can edit these to your liking or needs:
 
 * **Geometry:** Set the height of the pipe (`H`). The length is calculated automatically.
