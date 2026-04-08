@@ -1,6 +1,6 @@
-To run this code, you will need Python installed along with the following libraries:
+To run this code, you will need Python 3.14.3 installed along with the following libraries:
 
-numpy 
-matplotlib 
-scipy
+numpy              2.4.2
+matplotlib         3.10.8 
+scipy              1.17.1
 
